@@ -1,0 +1,40 @@
+@import "global";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 5em;
+}
+
+.logo {
+  font-weight: 600;
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: var(--interactive-01);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.navbarLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > li {
+    margin-left: 1.5rem;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.linkedin {
+  margin-bottom: -3px;
+}
